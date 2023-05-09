@@ -3,9 +3,9 @@
 
 
 using System.Threading.Tasks;
-using IdentityServer4.Models;
+using IdentityServerZoe.Models;
 
-namespace IdentityServer4.Stores
+namespace IdentityServerZoe.Stores
 {
     /// <summary>
     /// Interface for the device flow store

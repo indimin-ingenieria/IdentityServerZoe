@@ -1,4 +1,4 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityServerZoe.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

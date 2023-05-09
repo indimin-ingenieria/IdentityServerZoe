@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace IdentityServer4.Models.ManageViewModels
+namespace IdentityServerZoe.Models.ManageViewModels
 {
     public class IndexViewModel
     {

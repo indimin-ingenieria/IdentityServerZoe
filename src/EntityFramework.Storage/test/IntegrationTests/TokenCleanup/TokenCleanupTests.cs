@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Entities;
-using IdentityServer4.EntityFramework.Interfaces;
-using IdentityServer4.EntityFramework.Options;
-using IdentityServer4.EntityFramework.Stores;
-using IdentityServer4.Stores;
-using IdentityServer4.Test;
+using IdentityServerZoe.EntityFramework.DbContexts;
+using IdentityServerZoe.EntityFramework.Entities;
+using IdentityServerZoe.EntityFramework.Interfaces;
+using IdentityServerZoe.EntityFramework.Options;
+using IdentityServerZoe.EntityFramework.Stores;
+using IdentityServerZoe.Stores;
+using IdentityServerZoe.Test;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.TokenCleanup
+namespace IdentityServerZoe.EntityFramework.IntegrationTests.TokenCleanup
 {
     public class TokenCleanupTests : IntegrationTest<TokenCleanupTests, PersistedGrantDbContext, OperationalStoreOptions>
     {

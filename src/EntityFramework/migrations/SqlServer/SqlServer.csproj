@@ -5,9 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\EntityFramework.Storage\src\IdentityServer4.EntityFramework.Storage.csproj" />
-    <ProjectReference Include="..\..\..\IdentityServer4\src\IdentityServer4.csproj" />
-    <ProjectReference Include="..\..\src\IdentityServer4.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\..\EntityFramework.Storage\src\IdentityServerZoe.EntityFramework.Storage.csproj" />
+    <ProjectReference Include="..\..\..\IdentityServerZoe\src\IdentityServerZoe.csproj" />
+    <ProjectReference Include="..\..\src\IdentityServerZoe.EntityFramework.csproj" />
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
   </ItemGroup>

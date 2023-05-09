@@ -4,7 +4,7 @@
 
 using System;
 
-namespace IdentityServer4.AspNetIdentity
+namespace IdentityServerZoe.AspNetIdentity
 {
     internal class Decorator<TService>
     {

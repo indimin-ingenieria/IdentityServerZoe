@@ -8,7 +8,7 @@ using System.Linq;
 
 #pragma warning disable 1591
 
-namespace IdentityServer4.Extensions
+namespace IdentityServerZoe.Extensions
 {
     internal static class IEnumerableExtensions
     {
