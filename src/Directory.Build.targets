@@ -1,34 +1,34 @@
 <Project>
 
   <PropertyGroup>
-    <FrameworkVersion>3.1.0</FrameworkVersion>
-    <ExtensionsVersion>3.1.0</ExtensionsVersion>
-    <EntityFrameworkVersion>3.1.0</EntityFrameworkVersion>
+    <FrameworkVersion>6.0.16</FrameworkVersion>
+    <ExtensionsVersion>6.0.16</ExtensionsVersion>
+    <EntityFrameworkVersion>6.0.16</EntityFrameworkVersion>
     
-    <IdentityServerVersion>4.1.2-*</IdentityServerVersion>
+<!--    <IdentityServerVersion>4.1.2-*</IdentityServerVersion>-->
   </PropertyGroup>
 
   <ItemGroup>
     <!--build related-->
-    <PackageReference Include="MinVer" Version="2.3.0" PrivateAssets="All" />
+    <PackageReference Include="MinVer" Version="4.3.0" PrivateAssets="All" />
     <PackageReference Update="SimpleExec" Version="6.2.0" />
     <PackageReference Update="Bullseye" Version="3.3.0" />
-    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
 
     <!--tests -->
-    <PackageReference Update="FluentAssertions" Version="5.10.2" />
-    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.2.0" />
-    <PackageReference Update="xunit" Version="2.4.1" />
-    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.1" PrivateAssets="All" />
+    <PackageReference Update="FluentAssertions" Version="5.10.3" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Update="xunit" Version="2.4.2" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.5" PrivateAssets="All" />
 
     <!--our stuff -->
-    <PackageReference Update="IdentityModel" Version="4.4.0" />
+    <PackageReference Update="IdentityModel" Version="4.6.0" />
 
-    <PackageReference Update="IdentityServer4" Version="$(IdentityServerVersion)" />
-    <PackageReference Update="IdentityServer4.AspNetIdentity" Version="$(IdentityServerVersion)" />
-    <PackageReference Update="IdentityServer4.Storage" Version="$(IdentityServerVersion)" />
-    <PackageReference Update="IdentityServer4.EntityFramework.Storage" Version="$(IdentityServerVersion)" />
-    <PackageReference Update="IdentityServer4.EntityFramework" Version="$(IdentityServerVersion)" />
+<!--    <PackageReference Update="IdentityServer4" Version="$(IdentityServerVersion)" />-->
+<!--    <PackageReference Update="IdentityServer4.AspNetIdentity" Version="$(IdentityServerVersion)" />-->
+<!--    <PackageReference Update="IdentityServer4.Storage" Version="$(IdentityServerVersion)" />-->
+<!--    <PackageReference Update="IdentityServer4.EntityFramework.Storage" Version="$(IdentityServerVersion)" />-->
+<!--    <PackageReference Update="IdentityServer4.EntityFramework" Version="$(IdentityServerVersion)" />-->
 
     <!--microsoft extensions -->
     <PackageReference Update="Microsoft.Extensions.Caching.Memory" Version="$(ExtensionsVersion)" />
@@ -39,11 +39,12 @@
     <PackageReference Update="Microsoft.Extensions.Options.ConfigurationExtensions" Version="$(ExtensionsVersion)" />
     
     <!--misc -->
-    <PackageReference Update="Newtonsoft.Json" Version="12.0.2" />
-    <PackageReference Update="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="5.6.0" />
-    <PackageReference Update="System.IdentityModel.Tokens.Jwt" Version="[5.6.0,6.0)" />
-    <PackageReference Update="System.Security.Principal.Windows" Version="4.7.0" />
-    <PackageReference Update="AutoMapper" Version="[10.0.0,11.0)" />
+    <PackageReference Update="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Update="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.10.0" />
+    <PackageReference Update="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+    <PackageReference Update="System.Security.Principal.Windows" Version="5.0.0" />
+    <PackageReference Update="AutoMapper" Version="10.0.0" />
+    <PackageReference Update="Serilog.AspNetCore" Version="6.1.0" />
     
     <!--microsoft asp.net core -->
     <PackageReference Update="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="$(FrameworkVersion)" />
