@@ -5,7 +5,7 @@
     <ExtensionsVersion>6.0.16</ExtensionsVersion>
     <EntityFrameworkVersion>6.0.16</EntityFrameworkVersion>
     
-<!--    <IdentityServerVersion>4.1.2-*</IdentityServerVersion>-->
+    <IdentityServerVersion>1.0.1-*</IdentityServerVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,11 +24,11 @@
     <!--our stuff -->
     <PackageReference Update="IdentityModel" Version="4.6.0" />
 
-<!--    <PackageReference Update="IdentityServerZoe" Version="$(IdentityServerVersion)" />-->
-<!--    <PackageReference Update="IdentityServerZoe.AspNetIdentity" Version="$(IdentityServerVersion)" />-->
-<!--    <PackageReference Update="IdentityServerZoe.Storage" Version="$(IdentityServerVersion)" />-->
-<!--    <PackageReference Update="IdentityServerZoe.EntityFramework.Storage" Version="$(IdentityServerVersion)" />-->
-<!--    <PackageReference Update="IdentityServerZoe.EntityFramework" Version="$(IdentityServerVersion)" />-->
+    <PackageReference Update="IdentityServerZoe" Version="$(IdentityServerVersion)" />
+    <PackageReference Update="IdentityServerZoe.AspNetIdentity" Version="$(IdentityServerVersion)" />
+    <PackageReference Update="IdentityServerZoe.Storage" Version="$(IdentityServerVersion)" />
+    <PackageReference Update="IdentityServerZoe.EntityFramework.Storage" Version="$(IdentityServerVersion)" />
+    <PackageReference Update="IdentityServerZoe.EntityFramework" Version="$(IdentityServerVersion)" />
 
     <!--microsoft extensions -->
     <PackageReference Update="Microsoft.Extensions.Caching.Memory" Version="$(ExtensionsVersion)" />
