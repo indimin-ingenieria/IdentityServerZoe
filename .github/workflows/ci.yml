@@ -32,5 +32,5 @@ jobs:
       env:
         SignClientSecret: ${{ secrets.SIGNCLIENT }}
       run: |
-        ./build.ps1 sign
+        ./build.ps1 default
         dotnet nuget push .\nuget\*.nupkg --api-key ${{ secrets.PACKAGES_PAT }} --source "https://nuget.pkg.github.com/indimin-ingenieria/index.json"
