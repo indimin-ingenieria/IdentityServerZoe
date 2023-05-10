@@ -35,9 +35,9 @@
     <None Include="../../../icon.jpg" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+<!--  <ItemGroup>-->
+<!--    <FrameworkReference Include="Microsoft.AspNetCore.App" />-->
+<!--  </ItemGroup>-->
 
   <ItemGroup>
 <!--    <PackageReference Include="IdentityServerZoe.Storage" />-->
