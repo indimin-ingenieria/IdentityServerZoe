@@ -5,7 +5,7 @@
     <ExtensionsVersion>6.0.16</ExtensionsVersion>
     <EntityFrameworkVersion>6.0.16</EntityFrameworkVersion>
     
-    <IdentityServerVersion>1.0.1-*</IdentityServerVersion>
+    <IdentityServerVersion>0.0.0-*</IdentityServerVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -43,7 +43,7 @@
     <PackageReference Update="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="6.10.0" />
     <PackageReference Update="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
     <PackageReference Update="System.Security.Principal.Windows" Version="5.0.0" />
-    <PackageReference Update="AutoMapper" Version="10.0.0" />
+    <PackageReference Update="AutoMapper" Version="12.0.1" />
     <PackageReference Update="Serilog.AspNetCore" Version="6.1.0" />
     
     <!--microsoft asp.net core -->
