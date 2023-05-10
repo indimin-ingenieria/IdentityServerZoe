@@ -8,9 +8,9 @@
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
   </PropertyGroup>
 
-  <ItemGroup>
+  <!-- <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+  </ItemGroup> -->
   
   <ItemGroup>
     <ProjectReference Include="..\..\..\IdentityServerZoe\src\IdentityServerZoe.csproj" />
