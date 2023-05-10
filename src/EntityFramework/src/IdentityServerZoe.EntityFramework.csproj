@@ -9,9 +9,9 @@
     <AssemblyName>IdentityServerZoe.EntityFramework</AssemblyName>
     <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;EntityFramework</PackageTags>
     <PackageIcon>icon.jpg</PackageIcon>
-    <PackageProjectUrl>https://github.com/IdentityServer/IdentityServerZoe</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ivaneliasoo/IdentityServerZoe</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageReleaseNotes>https://github.com/IdentityServer/IdentityServerZoe/releases</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/ivaneliasoo/IdentityServerZoe/releases</PackageReleaseNotes>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
