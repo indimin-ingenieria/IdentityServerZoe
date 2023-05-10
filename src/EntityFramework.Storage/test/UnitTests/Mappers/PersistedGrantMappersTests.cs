@@ -14,7 +14,8 @@ namespace IdentityServerZoe.EntityFramework.UnitTests.Mappers
         [Fact]
         public void PersistedGrantAutomapperConfigurationIsValid()
         {
-            PersistedGrantMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<PersistedGrantMapperProfile>();
+            PersistedGrantMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
+            // PersistedGrantMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<PersistedGrantMapperProfile>();
         }
 
         [Fact]

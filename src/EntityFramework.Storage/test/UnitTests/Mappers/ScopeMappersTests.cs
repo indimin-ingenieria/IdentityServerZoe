@@ -15,7 +15,8 @@ namespace IdentityServerZoe.EntityFramework.UnitTests.Mappers
         [Fact]
         public void ScopeAutomapperConfigurationIsValid()
         {
-            ScopeMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<ScopeMapperProfile>();
+            ScopeMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
+            // ScopeMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<ScopeMapperProfile>();
         }
 
         [Fact]

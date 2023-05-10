@@ -13,7 +13,8 @@ namespace IdentityServerZoe.EntityFramework.UnitTests.Mappers
         [Fact]
         public void IdentityResourceAutomapperConfigurationIsValid()
         {
-            IdentityResourceMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<IdentityResourceMapperProfile>();
+            IdentityResourceMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid();
+            // IdentityResourceMappers.Mapper.ConfigurationProvider.AssertConfigurationIsValid<IdentityResourceMapperProfile>();
         }
 
         [Fact]
