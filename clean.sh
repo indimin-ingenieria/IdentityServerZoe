@@ -1,3 +1,3 @@
-git clean -xdf -e samples -e src/IdentityServer4/.vs -e .idea
+git clean -xdf -e samples -e src/IdentityServerZoe/.vs -e .idea
 
 ./clean_cache.sh

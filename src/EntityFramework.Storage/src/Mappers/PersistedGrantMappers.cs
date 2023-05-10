@@ -3,9 +3,9 @@
 
 
 using AutoMapper;
-using IdentityServer4.Models;
+using IdentityServerZoe.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace IdentityServerZoe.EntityFramework.Mappers
 {
     /// <summary>
     /// Extension methods to map to/from entity/model for persisted grants.

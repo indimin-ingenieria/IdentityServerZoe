@@ -4,7 +4,7 @@
 
 using System;
 
-namespace IdentityServer4.Models
+namespace IdentityServerZoe.Models
 {
     /// <summary>
     /// Models a client secret with identifier and expiration

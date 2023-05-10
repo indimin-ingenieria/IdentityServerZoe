@@ -5,9 +5,9 @@
 using System.Collections.Generic;
 using System.Security.Claims;
 using AutoMapper;
-using IdentityServer4.Models;
+using IdentityServerZoe.Models;
 
-namespace IdentityServer4.EntityFramework.Mappers
+namespace IdentityServerZoe.EntityFramework.Mappers
 {
     /// <summary>
     /// Defines entity/model mapping for clients.

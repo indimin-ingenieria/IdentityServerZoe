@@ -1,11 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\IdentityServer4.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\..\EntityFramework.Storage\src\IdentityServerZoe.EntityFramework.Storage.csproj" />
+    <ProjectReference Include="..\..\..\IdentityServerZoe\src\IdentityServerZoe.csproj" />
+    <ProjectReference Include="..\..\src\IdentityServerZoe.EntityFramework.csproj" />
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
   </ItemGroup>

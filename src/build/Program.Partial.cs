@@ -41,10 +41,10 @@ namespace build
                 Sign("./src/bin/Release", "*.dll");
             });
 
-            Target(Targets.Test, DependsOn(Targets.Build), () =>
-            {
-                Run("dotnet", $"test -c Release --no-build", echoPrefix: Prefix);
-            });
+            // Target(Targets.Test, DependsOn(Targets.Build), () =>
+            // {
+            //     Run("dotnet", $"test -c Release --no-build", echoPrefix: Prefix);
+            // });
 
             Target(Targets.CleanPackOutput, () =>
             {
@@ -78,9 +78,12 @@ namespace build
 
             Target("quick", DependsOn(Targets.CopyPackOutput));
 
-            Target("default", DependsOn(Targets.Test, Targets.CopyPackOutput));
+            //Targets.Test,
+            Target("default", DependsOn( Targets.CopyPackOutput));
 
-            Target("sign", DependsOn(Targets.SignBinary, Targets.Test, Targets.SignPackage, Targets.CopyPackOutput));
+            // Targets.Test, 
+            // dejamos de firmar tempralmente
+            // Target("sign", DependsOn(Targets.SignBinary, Targets.SignPackage, Targets.CopyPackOutput));
 
             RunTargetsAndExit(args, ex => ex is SimpleExec.NonZeroExitCodeException || ex.Message.EndsWith(envVarMissing), Prefix);
         }

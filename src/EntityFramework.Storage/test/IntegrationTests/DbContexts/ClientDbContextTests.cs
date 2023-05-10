@@ -2,14 +2,14 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using IdentityServer4.EntityFramework.DbContexts;
+using IdentityServerZoe.EntityFramework.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using IdentityServer4.EntityFramework.Entities;
-using IdentityServer4.EntityFramework.Options;
+using IdentityServerZoe.EntityFramework.Entities;
+using IdentityServerZoe.EntityFramework.Options;
 using Xunit;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.DbContexts
+namespace IdentityServerZoe.EntityFramework.IntegrationTests.DbContexts
 {
     public class ClientDbContextTests : IntegrationTest<ClientDbContextTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {

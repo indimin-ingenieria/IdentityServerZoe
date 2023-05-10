@@ -7,15 +7,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityModel;
-using IdentityServer4.EntityFramework.DbContexts;
-using IdentityServer4.EntityFramework.Mappers;
-using IdentityServer4.EntityFramework.Options;
-using IdentityServer4.EntityFramework.Stores;
-using IdentityServer4.Models;
+using IdentityServerZoe.EntityFramework.DbContexts;
+using IdentityServerZoe.EntityFramework.Mappers;
+using IdentityServerZoe.EntityFramework.Options;
+using IdentityServerZoe.EntityFramework.Stores;
+using IdentityServerZoe.Models;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace IdentityServer4.EntityFramework.IntegrationTests.Stores
+namespace IdentityServerZoe.EntityFramework.IntegrationTests.Stores
 {
     public class ScopeStoreTests : IntegrationTest<ScopeStoreTests, ConfigurationDbContext, ConfigurationStoreOptions>
     {
