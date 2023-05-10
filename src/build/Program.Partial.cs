@@ -81,6 +81,8 @@ namespace build
             //Targets.Test,
             Target("default", DependsOn( Targets.CopyPackOutput));
 
+            Target("sign", DependsOn(Targets.SignBinary, Targets.SignPackage, Targets.CopyPackOutput));
+
             // Targets.Test, 
             // dejamos de firmar tempralmente
             // Target("sign", DependsOn(Targets.SignBinary, Targets.SignPackage, Targets.CopyPackOutput));
@@ -90,18 +92,18 @@ namespace build
 
         private static void Sign(string path, string searchTerm)
         {
-            var signClientSecret = Environment.GetEnvironmentVariable("SignClientSecret");
+            // var signClientSecret = Environment.GetEnvironmentVariable("SignClientSecret");
 
-            if (string.IsNullOrWhiteSpace(signClientSecret))
-            {
-                throw new Exception($"SignClientSecret{envVarMissing}");
-            }
+            // if (string.IsNullOrWhiteSpace(signClientSecret))
+            // {
+            //     throw new Exception($"SignClientSecret{envVarMissing}");
+            // }
 
-            foreach (var file in Directory.GetFiles(path, searchTerm, SearchOption.AllDirectories))
-            {
-                Console.WriteLine($"  Signing {file}");
-                Run("dotnet", $"SignClient sign -c ../../signClient.json -i {file} -r sc-ids@dotnetfoundation.org -s \"{signClientSecret}\" -n 'IdentityServer4'", noEcho: true);
-            }
+            // foreach (var file in Directory.GetFiles(path, searchTerm, SearchOption.AllDirectories))
+            // {
+            //     Console.WriteLine($"  Signing {file}");
+            //     Run("dotnet", $"SignClient sign -c ../../signClient.json -i {file} -r sc-ids@dotnetfoundation.org -s \"{signClientSecret}\" -n 'IdentityServer4'", noEcho: true);
+            // }
         }
     }
 }
