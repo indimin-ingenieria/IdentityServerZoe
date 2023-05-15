@@ -9,9 +9,9 @@
     <AssemblyName>IdentityServerZoe.AspNetIdentity</AssemblyName>
     <PackageTags>OAuth2;OAuth 2.0;OpenID Connect;Security;Identity;IdentityServer;ASP.NET Identity</PackageTags>
     <PackageIcon>icon.jpg</PackageIcon>
-    <PackageProjectUrl>https://github.com/IdentityServer/IdentityServerZoe</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/indimin-ingenieria/IdentityServerZoe</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageReleaseNotes>https://github.com/IdentityServer/IdentityServerZoe/releases</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/indimin-ingenieria/IdentityServerZoe/releases</PackageReleaseNotes>
 
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
