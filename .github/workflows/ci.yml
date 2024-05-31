@@ -22,7 +22,7 @@ jobs:
     runs-on: ${{ matrix.runs-on }}
     steps:
     # windows-latest dosesn't have lastest sdk 8 version
-    - name: Setup .NET 6.x
+    - name: Setup .NET 8.x
       uses: actions/setup-dotnet@v3
       if: (matrix.runs-on == 'windows-latest')
       with:
