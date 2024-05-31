@@ -1,6 +1,6 @@
-# This is a forked version of archived IdentityServer4 project ported from .net core 3.1 to .net6
+# This is a forked version of archived IdentityServer4 project ported from .net core 3.1 to .net8
 
-- All projects has been updated to dotnet 6.0, dotnet Packages has been updated to version 6.0.16
+- All projects has been updated to dotnet 8.0, dotnet Packages has been updated to version 8.0.6
 - All dependencies have been updated to the most recent possible version as described bellow:
 
 | Package                                         |  From  | To     |
