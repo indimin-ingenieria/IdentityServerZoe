@@ -190,7 +190,7 @@ namespace IdentityServer.UnitTests.ResponseHandling
         }
 
         [Fact]
-        public void ProcessAsync_should_throw_if_incorrect_sub_issued_by_profile_service()
+        public async Task ProcessAsync_should_throw_if_incorrect_sub_issued_by_profile_service()
         {
             _identityResources.Add(new IdentityResource("id1", new[] { "foo" }));
             _identityResources.Add(new IdentityResource("id2", new[] { "bar" }));
@@ -216,7 +216,7 @@ namespace IdentityServer.UnitTests.ResponseHandling
 
             Func<Task> act = () => _subject.ProcessAsync(result);
 
-            act.Should().Throw<InvalidOperationException>()
+            (await act.Should().ThrowAsync<InvalidOperationException>())
                 .And.Message.Should().Contain("subject");
         }
 

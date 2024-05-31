@@ -111,6 +111,9 @@ namespace IdentityServerZoe.EntityFramework.IntegrationTests.Stores
         {
             using (var context = new PersistedGrantDbContext(options, StoreOptions))
             {
+                // en tiempo de desarrollo (cuando se ejecutan las pruebas desde el ) no se hace dispose de la bd en memoria
+                // agrego el RemoveRange para que no falle esta prueba de forma intermitente
+                context.PersistedGrants.RemoveRange(await context.PersistedGrants.ToListAsync());
                 context.PersistedGrants.Add(CreateTestObject(sub: "sub1", clientId: "c1", sid: "s1", type: "t1").ToEntity());
                 context.PersistedGrants.Add(CreateTestObject(sub: "sub1", clientId: "c1", sid: "s1", type: "t2").ToEntity());
                 context.PersistedGrants.Add(CreateTestObject(sub: "sub1", clientId: "c1", sid: "s2", type: "t1").ToEntity());
@@ -121,7 +124,7 @@ namespace IdentityServerZoe.EntityFramework.IntegrationTests.Stores
                 context.PersistedGrants.Add(CreateTestObject(sub: "sub1", clientId: "c2", sid: "s2", type: "t2").ToEntity());
                 context.PersistedGrants.Add(CreateTestObject(sub: "sub1", clientId: "c3", sid: "s3", type: "t3").ToEntity());
                 context.PersistedGrants.Add(CreateTestObject().ToEntity());
-                context.SaveChanges();
+                await ((DbContext)context).SaveChangesAsync();
             }
 
             using (var context = new PersistedGrantDbContext(options, StoreOptions))

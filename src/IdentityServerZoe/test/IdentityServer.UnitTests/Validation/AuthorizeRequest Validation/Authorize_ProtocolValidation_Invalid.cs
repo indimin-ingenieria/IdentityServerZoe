@@ -19,13 +19,13 @@ namespace IdentityServer.UnitTests.Validation.AuthorizeRequest_Validation
 
         [Fact]
         [Trait("Category", Category)]
-        public void Null_Parameter()
+        public async Task Null_Parameter()
         {
             var validator = Factory.CreateAuthorizeRequestValidator();
 
             Func<Task> act = () => validator.ValidateAsync(null);
 
-            act.Should().Throw<ArgumentNullException>();
+            await act.Should().ThrowAsync<ArgumentNullException>();
         }
 
         [Fact]

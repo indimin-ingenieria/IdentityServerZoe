@@ -2,7 +2,7 @@
   
   <PropertyGroup>
     <PackageId>IdentityServerZoe</PackageId>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Description>OpenID Connect and OAuth 2.0 Framework for ASP.NET Core</Description>
     <Authors>INDIMIN</Authors>
     <AssemblyName>IdentityServerZoe</AssemblyName>
