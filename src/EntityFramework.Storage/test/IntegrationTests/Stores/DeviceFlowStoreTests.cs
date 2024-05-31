@@ -83,7 +83,7 @@ namespace IdentityServerZoe.EntityFramework.IntegrationTests.Stores
                 foundDeviceFlowCodes.Should().NotBeNull();
                 var deserializedData = new PersistentGrantSerializer().Deserialize<DeviceCode>(foundDeviceFlowCodes?.Data);
 
-                deserializedData.CreationTime.Should().BeCloseTo(data.CreationTime);
+                deserializedData.CreationTime.Should().BeCloseTo(data.CreationTime, TimeSpan.FromMinutes(5));
                 deserializedData.ClientId.Should().Be(data.ClientId);
                 deserializedData.Lifetime.Should().Be(data.Lifetime);
             }

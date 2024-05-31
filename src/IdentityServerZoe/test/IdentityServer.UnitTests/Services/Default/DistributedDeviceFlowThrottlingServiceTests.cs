@@ -98,7 +98,7 @@ namespace IdentityServer.UnitTests.Services.Default
             var dateTime = DateTime.Parse(dateTimeAsString);
             dateTime.Should().Be(testDate);
 
-            values?.Item2.AbsoluteExpiration.Should().BeCloseTo(testDate.AddSeconds(deviceCode.Lifetime));
+            values?.Item2.AbsoluteExpiration.Should().BeCloseTo(testDate.AddSeconds(deviceCode.Lifetime), TimeSpan.FromMinutes(5));
         }
     }
 

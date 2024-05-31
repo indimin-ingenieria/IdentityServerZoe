@@ -1,24 +1,24 @@
-# This is a forked version of archived IdentityServer4 project ported from .net core 3.1 to .net6
+# This is a forked version of archived IdentityServer4 project ported from .net core 3.1 to .net8
 
-- All projects has been updated to dotnet 6.0, dotnet Packages has been updated to version 6.0.16
-- All dependencies has been updated to the most recent posible version as described bellow:
+- All projects has been updated to dotnet 8.0, dotnet Packages has been updated to version 8.0.6
+- All dependencies have been updated to the most recent possible version as described bellow:
 
-|  Package  | From | To |
-|-------|:-----------------:|-----|
-|  MinVer  | 2.3.0  | 4.3.0  |
-|  Microsoft.SourceLink.GitHub  | 1.0.0  | 1.1.1  |
-|  FluentAssertions  | 5.10.2  | 5.10.3  |
-|  Microsoft.NET.Test.Sdk  | 16.2.0  | 17.5.0  |
-|  xunit  | 2.4.1  | 2.4.2  |
-|  xunit.runner.visualstudio  | 2.4.1  | 2.4.5  |
-|  IdentityModel  | 4.4.0  | 4.6.0  |
-|  Microsoft.Extensions.Logging.Console  | 3.1.0  | 6.0.0  |
-|  Newtonsoft.Json  | 12.0.2  | 13.0.3  |
-|  Microsoft.IdentityModel.Protocols.OpenIdConnect  | 5.6.0  | 6.10.0  |
-|  System.IdentityModel.Tokens.Jwt  | 5.6.0 | 6.10.0  |
-|  System.Security.Principal.Windows  | 4.7.0  | 5.0.0  |
-|  AutoMapper  | 10.0.0  | 12.0.1  |
-|  Serilog.AspNetCore  | 3.1.0  | 6.1.0  |
+| Package                                         |  From  | To     |
+|-------------------------------------------------|:------:|--------|
+| MinVer                                          | 2.3.0  | 4.3.0  |
+| Microsoft.SourceLink.GitHub                     | 1.0.0  | 1.1.1  |
+| FluentAssertions                                | 5.10.2 | 5.10.3 |
+| Microsoft.NET.Test.Sdk                          | 16.2.0 | 17.5.0 |
+| xunit                                           | 2.4.1  | 2.4.2  |
+| xunit.runner.visualstudio                       | 2.4.1  | 2.4.5  |
+| IdentityModel                                   | 4.4.0  | 4.6.0  |
+| Microsoft.Extensions.Logging.Console            | 3.1.0  | 6.0.0  |
+| Newtonsoft.Json                                 | 12.0.2 | 13.0.3 |
+| Microsoft.IdentityModel.Protocols.OpenIdConnect | 5.6.0  | 6.10.0 |
+| System.IdentityModel.Tokens.Jwt                 | 5.6.0  | 6.10.0 |
+| System.Security.Principal.Windows               | 4.7.0  | 5.0.0  |
+| AutoMapper                                      | 10.0.0 | 12.0.1 |
+| Serilog.AspNetCore                              | 3.1.0  | 6.1.0  |
 
 Some tests arrangement from IdentityServerZoe.EntityFramework project has been updated to support Automapper 12.0.1
 
@@ -45,12 +45,12 @@ IdentityServerZoe is a free, open source [OpenID Connect](http://openid.net/conn
 
 ## Documentation
 
-We have made no changes that affect documentation so it remains the same.
+We have made no changes that affect documentation, so it remains the same.
 Please visit [readthedocs](https://identityserver4.readthedocs.io).
 
 ## Community Support
 
-This project is not being actively maintained and its offered as it is, the use of this bits its on your own responsibility.
+This project is not being actively maintained, and it's offered as it is, the use of these bits its on your own responsibility.
 
 ## Acknowledgements
 

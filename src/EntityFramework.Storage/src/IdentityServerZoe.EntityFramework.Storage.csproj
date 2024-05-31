@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>IdentityServerZoe.EntityFramework.Storage</PackageId>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     
     <Description>EntityFramework persistence layer for IdentityServerZoe</Description>
     <Authors>INDIMIN</Authors>
