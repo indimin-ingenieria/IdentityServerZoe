@@ -21,16 +21,16 @@ jobs:
     name: ${{ matrix.runs-on }}
     runs-on: ${{ matrix.runs-on }}
     steps:
+    # windows-latest dosesn't have lastest sdk 8 version
+    - name: Setup .NET 6.x
+      uses: actions/setup-dotnet@v3
+      if: (matrix.runs-on == 'windows-latest')
+      with:
+        # Semantic version range syntax or exact version of a dotnet version
+        dotnet-version: '8.0.x'
+                
     - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819
     - run: dotnet --info
-      
-    # windows-latest dosesn't have lastest sdk 8 version
-    -  name: Setup .NET 6.x
-       uses: actions/setup-dotnet@v3
-       if: (matrix.runs-on == 'windows-latest')
-       with:
-         # Semantic version range syntax or exact version of a dotnet version
-         dotnet-version: '8.0.x'
     
     - if: contains(matrix.runs-on, 'macOS') || contains(matrix.runs-on, 'ubuntu')
       run: ./build.sh
